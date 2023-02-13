@@ -1,0 +1,31 @@
+{
+  "name": "@xanhz/nestjs-pino-pretty",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && npm run lint && tsc",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [
+    "nestjs",
+    "pino"
+  ],
+  "author": "Zincat0107@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "pino-pretty": "^9.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.3",
+    "@typescript-eslint/eslint-plugin": "5.45.0",
+    "@typescript-eslint/parser": "5.45.0",
+    "eslint": "8.29.0",
+    "ts-node": "10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
