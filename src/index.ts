@@ -5,7 +5,7 @@ export default function createLogPretty(options: any) {
 		...options,
 		translateTime: 'SYS:dd/mm/yyyy HH:MM:ss',
 		ignore: 'pid,hostname',
-		colorize: true,
+		colorize: process.env.NODE_ENV !== 'production',
 		singleLine: true,
 	})
 }
